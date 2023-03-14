@@ -1,16 +1,16 @@
 {
-  "name": "@hasancank/fingerprintio",
+  "name": "fingerprintio",
   "version": "1.0.0",
-  "description": "",
+  "description": "browser fingerprint",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hasancankucuk/fingerprintio.git"
   },
-  "author": "",
+  "author": "Hasan Can Kucuk",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hasancankucuk/fingerprintio/issues"

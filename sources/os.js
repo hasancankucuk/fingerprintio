@@ -1,7 +1,6 @@
 import { Platform } from "../models/platform";
 
 export default function getOs() {
-    let window = window || this || self;
     if(window) {
         let os = window?.navigator?.platform;
         return checkOs(os);

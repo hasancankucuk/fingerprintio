@@ -1,4 +1,3 @@
-let window = window || this || self;
 function getBrowserLanguage() {
     return window?.navigator?.language;
 }

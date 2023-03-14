@@ -1,6 +1,5 @@
-import { Vendors } from "../models";
+import { Vendors } from "../models/vendors";
 export default function getVendor() {
-    let window = window || this || self;
     if(window) {
         let vendor = window?.navigator?.vendor;
         return checkVendor(vendor);

@@ -1,5 +1,5 @@
 export const Vendors = {
-    Google: 'Google Inc',
+    Google: 'Google Inc.',
     Firefox: '',
     Apple: 'Apple Computer, Inc.'
 }

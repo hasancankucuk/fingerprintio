@@ -1,11 +1,11 @@
-import { audioFingerprint, getColorDepth, getColorGamut, getFonts, getHardwareConcurrency,
+import { hashService } from "./services";
+import { getAudioFingerprint, getColorDepth, getColorGamut, getFonts, getHardwareConcurrency,
     getOs, getOsCpu, getPlugins, getRectFingerprint, getScreenResolution, getSpeechSynthesis,
     getStorageSupport, getTimeZone, isTouchScreen, getUserAgent, getVideoCard, getVendor } from "./sources";
 
-import hashService from "./services/";
 
 let fingerprintObject = {
-    AudioFingerprint: audioFingerprint() || null,
+    AudioFingerprint: getAudioFingerprint() || null,
     ColorDepth: getColorDepth() || null,
     ColorGamut: getColorGamut() || null,
     Fonts: getFonts() || null,
@@ -24,6 +24,11 @@ let fingerprintObject = {
     Vendor: getVendor() || null
 };
 
-export default function getFingerprint() {
-    return hashService(fingerprintObject);
+function getFingerprint() {
+    console.log(hashService(fingerprintObject, 5))
+    return hashService(fingerprintObject, 5);
+}
+
+export {
+    getFingerprint
 }

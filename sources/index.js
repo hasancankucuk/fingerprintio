@@ -1,4 +1,5 @@
-import audioFingerprint from "./audioFingerprint";
+// import {audioFingerprint} from "./audioFingerprint";
+import getAudioFingerprint from "./audioFingerprint";
 import getColorDepth from "./colorDepth";
 import getColorGamut from "./colorGamut";
 import getFonts from "./fonts";
@@ -20,7 +21,7 @@ import getVendor from "./vendor";
 
 
 export {
-    audioFingerprint,
+    getAudioFingerprint,
     getColorDepth,
     getColorGamut,
     getFonts,
