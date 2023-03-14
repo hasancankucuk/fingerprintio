@@ -16,6 +16,8 @@ function checkVendor(vendor) {
                 return 'Google';
             case Vendors.Apple:
                 return 'Apple';
+            default:
+                return '';
         }
     }
 }
